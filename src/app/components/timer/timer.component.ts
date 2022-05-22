@@ -29,7 +29,10 @@ export class TimerComponent implements OnInit {
 
   ticking() {
     timer(0, 1).subscribe((ellapsedCycles) => {
-      if (this.isRunning) {
+      if (
+        this.isRunning &&
+        this.time_in_seconds !== this.has_to_work_in_seconds
+      ) {
         this.time_in_seconds++;
         this.time_to_work_to_show = this.convert_time_to_show(
           this.has_to_work_in_seconds
