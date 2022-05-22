@@ -1,1 +1,15 @@
-<p>timer works!</p>
+<circle-progress
+  [percent]="percentage"
+  [radius]="100"
+  [title]="time_worked_to_show"
+></circle-progress>
+<div class="buttons">
+  <Button *ngIf="!isRunning" (click)="start()">Start</Button>
+  <Button *ngIf="isRunning" (click)="pause()">Pause</Button>
+  <Button (click)="stop()">Stop</Button>
+  <Button (click)="reset()">reset</Button>
+</div>
+
+<h1>
+  {{ time_to_work_to_show }}
+</h1>
