@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { TimerComponent } from './components/timer/timer.component';
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
-  declarations: [AppComponent, TimerComponent],
+  declarations: [AppComponent, TimerComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

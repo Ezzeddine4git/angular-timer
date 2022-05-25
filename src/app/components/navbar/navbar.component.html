@@ -1,0 +1,11 @@
+<Button (click)="openNav()" class="open-btn">Open</Button>
+
+<div class="navbar" [ngClass]="{ active: isOpened }">
+  <ul class="navbar__list" [ngClass]="{ block: isOpened }">
+    <Button (click)="openNav()" class="open-btn">Close</Button>
+    <li class="navbar__list__item">Home</li>
+    <li class="navbar__list__item">Profile</li>
+    <li class="navbar__list__item">Time</li>
+    <li class="navbar__list__item">Setting</li>
+  </ul>
+</div>
